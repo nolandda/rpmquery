@@ -6,7 +6,7 @@ all: rpmquery.elf
 	@echo "Build finished"
 
 rpmquery.elf: rpmquery.o
-	gcc -o rmpquery.elf rpmquery.o $(LDFLAGS)
+	gcc -o rpmquery.elf rpmquery.o $(LDFLAGS)
 
 rpmquery.o: rpmquery.c
 	gcc -g -c rpmquery.c
