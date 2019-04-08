@@ -33,7 +33,7 @@ void printtagdata(const rpmtd atagdata ) {
 
 int main(int argc, char** argv) {
   int result = 0;
-  if( argc != 2 ) {
+  if( argc < 2 ) {
     printf("Usage:\n\trpmquery [ignored-options] <file.rpm>\n");
     exit(1);
   }
